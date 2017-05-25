@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using HelloWorld.Api;
 using HelloWorld.Api.Controllers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace HelloWorld.Api.Tests.Controllers
 {
@@ -9,17 +9,13 @@ namespace HelloWorld.Api.Tests.Controllers
     public class HomeControllerTest
     {
         [TestMethod]
-        public void Index()
+        public void GetRequestReturnsHelloWorld()
         {
-            // Arrange
-            HomeController controller = new HomeController();
+            var mockHelloWorldController = new HelloWorldController();
 
-            // Act
-            ViewResult result = controller.Index() as ViewResult;
+            var value = mockHelloWorldController.Get();
 
-            // Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual("Home Page", result.ViewBag.Title);
+            Assert.AreEqual("Hello World!", value);
         }
     }
 }
