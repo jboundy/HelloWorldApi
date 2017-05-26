@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApi.Core", "Hello
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApi.DAL", "HelloWorldApi.DAL\HelloWorldApi.DAL.csproj", "{4062D41D-88C1-435C-BFA4-E32EFC2D3E6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApi.BLL", "HelloWorldApi.BLL\HelloWorldApi.BLL.csproj", "{11B05343-F71F-420F-93D0-C4B13E46A3C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4062D41D-88C1-435C-BFA4-E32EFC2D3E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4062D41D-88C1-435C-BFA4-E32EFC2D3E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4062D41D-88C1-435C-BFA4-E32EFC2D3E6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B05343-F71F-420F-93D0-C4B13E46A3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B05343-F71F-420F-93D0-C4B13E46A3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B05343-F71F-420F-93D0-C4B13E46A3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B05343-F71F-420F-93D0-C4B13E46A3C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

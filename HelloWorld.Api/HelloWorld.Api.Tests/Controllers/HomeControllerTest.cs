@@ -1,7 +1,5 @@
-﻿using System.Web.Mvc;
-using HelloWorld.Api.Controllers;
+﻿using HelloWorld.Api.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 
 namespace HelloWorld.Api.Tests.Controllers
 {

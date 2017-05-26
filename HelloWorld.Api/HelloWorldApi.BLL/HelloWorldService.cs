@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HelloWorldApi.DAL
+namespace HelloWorldApi.BLL
 {
-    public interface IDataService
+    public interface IHelloWorldService<T> where T: class
     {
-        Task Commit();
+        IQueryable<T> Get();
     }
 }

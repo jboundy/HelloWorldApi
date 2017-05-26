@@ -1,22 +1,29 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Linq;
 using System.Web.Http;
+using HelloWorldApi.BLL;
+using HelloWorldApi.DAL.Models;
 
 namespace HelloWorld.Api.Controllers
 {
     [RoutePrefix("helloworld")]
-    public class HelloWorldController : ApiController
+    public class HelloWorldController : ApiController, IHelloWorldService<BaseModel>
     {
-       
+
+        public HelloWorldController()
+        {
+            
+        }
+
         [HttpGet]
         public string Get()
         {
             return "Hello World!";
         }
 
-        [HttpPost]
-        public async Task<IHttpActionResult> Post<T>([FromBody] T entity)
+        IQueryable<BaseModel> IHelloWorldService<BaseModel>.Get()
         {
-            return Ok(entity);
+            throw new NotImplementedException();
         }
     }
 }

@@ -177,6 +177,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HelloWorldApi.BLL\HelloWorldApi.BLL.csproj">
+      <Project>{11b05343-f71f-420f-93d0-c4b13e46a3c0}</Project>
+      <Name>HelloWorldApi.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HelloWorldApi.Core\HelloWorldApi.Core.csproj">
       <Project>{54054d0a-18a2-4b01-995b-b887c55d5162}</Project>
       <Name>HelloWorldApi.Core</Name>
